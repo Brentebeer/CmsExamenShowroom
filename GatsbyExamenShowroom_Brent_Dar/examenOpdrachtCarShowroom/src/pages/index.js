@@ -85,7 +85,7 @@ const IndexPage = () => {
           <div className="Cars-items">
           {homePageFeaturedAuto.map(({cars, slug}) => (
             <Cars to={`/${slug}`}>
-              <Image fluid={cars.carImage.childImageSharp.fluid} alt={cars.carImage.altText} />
+              <Image fluid={cars.carImage.imageFile.childImageSharp.fluid} alt={cars.carImage.imageFile.altText} />
               <div className="Cars-info">
                 <p>{cars.carsName}</p>
                 <p>{cars.carManufacturer}</p>
