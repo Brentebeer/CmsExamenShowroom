@@ -11,8 +11,7 @@ const Menu = ({menuItems}) => {
     De to zal bepalen naar waar die link zal leiden daarom steken we item.path erin wegens dat het de link is naar waar het moet door verwijzen
     De label is natuurlijk de naam zoals Home*/
 
-    return (
-        <MenuList>
+    return <MenuList>
             {menuItems.map(({node: item}, i) => (
                 <li key={i}>
                     <Link activeClassName="nav-active" to={item.path}>
@@ -21,7 +20,7 @@ const Menu = ({menuItems}) => {
                 </li>
             ))}
         </MenuList>
-    )
+    
 }
 
 export default Menu
