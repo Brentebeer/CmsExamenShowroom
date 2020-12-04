@@ -28,7 +28,7 @@ export const Wrapper = styled.div`
         border-bottom: solid 15px ${COLORS.PRIMARY};
       }
 
-      .roles {
+      .types {
         position: absolute;
         right: 0;
         bottom: 0;
@@ -47,7 +47,7 @@ export const Wrapper = styled.div`
           border-right: solid 5px ${COLORS.PRIMARY};
         }
 
-        .role {
+        .type {
           padding: 1rem 1.5rem;
         }
       }
