@@ -1,8 +1,7 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import {useStaticQuery, graphql } from "gatsby"
 /*Onze styled components installeren die van pagestyles komen*/
-import {Wrapper, Image, Cars} from "./pageStyles/pageStyles"
-import {COLORS} from '../constants'
+import {Wrapper, Image, Cars} from "../pageStyles/pageStyles"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -32,7 +31,7 @@ const IndexPage = () => {
           sourceUrl  
           imageFile {
             childImageSharp {
-              fluid(quality: 50){
+              fluid(quality: 40){
                 ...GatsbyImageSharpFluid_withWebp
               }
             }
@@ -50,7 +49,7 @@ const IndexPage = () => {
                 sourceUrl  
                   imageFile {
                     childImageSharp{
-                      fluid(quality: 50, grayscale: true){
+                      fluid(quality: 30, grayscale: true){
                         ...GatsbyImageSharpFluid_withWebp
                       }
                     }

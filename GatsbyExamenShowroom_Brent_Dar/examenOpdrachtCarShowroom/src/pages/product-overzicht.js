@@ -6,10 +6,8 @@ import SEO from "../components/seo"
 import {
     Wrapper,
     Image,
-    BottomEdgeDown,
-    BottomEdgeUp,
     Cars
-} from "./pageStyles/pageStyles"
+} from "../pageStyles/pageStyles"
 import {COLORS} from "../constants"
 
 const CarPage = () => {
@@ -27,7 +25,7 @@ const CarPage = () => {
                     sourceUrl  
                         imageFile {
                             childImageSharp {
-                                fluid(quality: 50){
+                                fluid(quality: 45){
                                 ...GatsbyImageSharpFluid_withWebp
                             }
                         }
@@ -50,7 +48,7 @@ const CarPage = () => {
                     sourceUrl  
                       imageFile {
                         childImageSharp{
-                          fluid(quality: 50, grayscale: true){
+                          fluid(quality: 45, grayscale: true){
                             ...GatsbyImageSharpFluid_withWebp
                           }
                         }
